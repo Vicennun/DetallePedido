@@ -27,9 +27,10 @@ public class DetallePedido {
 
     @Column(nullable = false)
     private Double precioUnitario;
-
-    @Column(nullable = false)
-    private Double subtotal;
+    
+    public double getSubtotal() {
+        return this.cantidad * this.precioUnitario;
+    }
 }
 
 /*

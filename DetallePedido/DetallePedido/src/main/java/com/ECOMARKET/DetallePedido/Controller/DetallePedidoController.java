@@ -61,7 +61,6 @@ public class DetallePedidoController {
         detped.setProductoId(detallePedido.getProductoId());
         detped.setCantidad(detallePedido.getCantidad());
         detped.setPrecioUnitario(detallePedido.getPrecioUnitario());
-        detped.setSubtotal(detallePedido.getSubtotal());
 
         DetallePedido actualizado = detallePedidoService.save(detped);
         return ResponseEntity.ok(actualizado);
